@@ -1,4 +1,12 @@
+// src/app/components/shared/Header.tsx
+// Description: TODO
+
+// Importing External Modules
 import Link from 'next/link'
+
+
+// Importing Internal Modules
+
 
 export const Header = () => {
     console.log('Hola mundo Header')
