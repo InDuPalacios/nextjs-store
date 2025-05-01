@@ -1,4 +1,4 @@
-// src/app/store/[category]
+// src/app/store/[[...category]]
 // Description: TODO
 
 // Importing External Modules
@@ -8,14 +8,15 @@
 
 interface CategoryProps{
     params:{
-        category: string
+        categories: string[],
+        searhParams?: string
     }
 }
 
 export default function Category(props: CategoryProps){
-    const { category } = props.params
+    const {categories} = props.params
 
     return(
-        <h1>Categoria dinámica: {category}</h1>
+        <h1>Categoria dinámica: {categories}</h1>
     )
 }
