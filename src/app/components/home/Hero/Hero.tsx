@@ -4,12 +4,15 @@
 // Importing External Modules
 
 // Importing Internal Modules
+import style from "./Hero.module.css"
 
 
 export const Hero = () => {
+    console.log(style)
     return(
-        <section>
-            <h1>Hero</h1>
+        <section className={style.Hero}>
+            <h1>Mishtycus</h1>
+            <h2>El poder del ronroneo hecho consejo.</h2>
         </section>
     )
 }
